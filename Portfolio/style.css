@@ -104,3 +104,16 @@ nav{
   bottom: 150px;
   right: 350px;
 }
+
+.Profile {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  clip-path: circle();
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
