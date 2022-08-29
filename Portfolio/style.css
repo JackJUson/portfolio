@@ -117,3 +117,26 @@ nav{
   transform: translateY(-50%);
   z-index: 1;
 }
+
+.controls {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.controls h3 {
+  margin: 15px 0;
+  color: #fff;
+}
+
+#upButton {
+  width: 15px;
+  cursor: pointer;
+}
+
+#downButton {
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
