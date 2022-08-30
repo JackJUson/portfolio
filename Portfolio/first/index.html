@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Website 1</title>
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <div class="name-title">
+        <h1>Jackson</h1>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <div class="information">
+      <div id="circle">
+        <div class="feature one">
+          <img src="./Images/js.png">
+          <div>
+            <h1>JavaScript</h1>
+            <p>Favourite language!</p>
+          </div>
+        </div>
+        <div class="feature two">
+          <img src="./Images/html.png" style="width: 100px;">
+          <div>
+            <h1>HTML</h1>
+            <p>Learning...</p>
+          </div>
+        </div>
+        <div class="feature three">
+          <img src="./Images/css.png" style="width: 60px;">
+          <div>
+            <h1>CSS</h1>
+            <p>Testing...</p>
+          </div>
+        </div>
+        <div class="feature four">
+          <img src="./Images/c.png">
+          <div>
+            <h1>C</h1>
+            <p>Love it!</p>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <img src="./Images/Profile.jpg" class="Profile">
+    </div>
+
+    <div class="controls">
+      <img src="./Images/arrow.png" id="upButton">
+      <h3>Features</h3>
+      <img src="./Images/arrow.png" id="downButton">
+    </div>
+  </div>
+
+  <script>
+    var circle = document.getElementById("circle");
+    var upButton = document.getElementById("upButton");
+    var downButton = document.getElementById("downButton");
+
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+
+    upButton.onclick = function() {
+      rotateSum = rotateValue + "rotate(-90deg)";
+      circle.style.transform = rotateSum;
+      rotateValue = rotateSum;
+    }
+
+    downButton.onclick = function() {
+      rotateSum = rotateValue + "rotate(90deg)";
+      circle.style.transform = rotateSum;
+      rotateValue = rotateSum;
+    }
+
+  </script>
+
+</body>
+</html>
