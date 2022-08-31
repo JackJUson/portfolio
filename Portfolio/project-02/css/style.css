@@ -118,6 +118,12 @@ h3 { font-size: var(--fs-h3) }
     margin-bottom: 1em;
 }
 
+.section__subtitle--work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
 /* Header */
 nav { display: none; }
 
@@ -216,6 +222,10 @@ nav { display: none; }
     margin: 0 auto;
 }
 
+.about-me__img {
+    box-shadow: var(--bs);
+}
+
 @media (min-width: 600px) {
     .about-me {
         display: grid;
@@ -227,11 +237,30 @@ nav { display: none; }
         grid-column-gap: 2em;
     }
 
-    .section__title-about {
+    .section__title--about {
         grid-area: title;
+    }
+
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
     }
 
     .about-me__img {
         grid-area: img;
+        position: relative;
+        z-index: 2;
     }
+}
+
+/* My Work */
+.my_work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
 }
