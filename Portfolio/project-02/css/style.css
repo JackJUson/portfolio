@@ -220,5 +220,18 @@ nav { display: none; }
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+
+    .section__title-about {
+        grid-area: title;
+    }
+
+    .about-me__img {
+        grid-area: img;
     }
 }
