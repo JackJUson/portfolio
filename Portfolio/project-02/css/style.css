@@ -132,7 +132,7 @@ header {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 180px;
 }
 
 .nav {
@@ -180,6 +180,15 @@ header {
     top: 1em;
     z-index: 1000;
 }
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
 
 .hamburger {
     display: block;
