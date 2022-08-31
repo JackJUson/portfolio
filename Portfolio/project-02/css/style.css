@@ -259,8 +259,38 @@ nav { display: none; }
 }
 
 /* My Work */
-.my_work {
+.my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    /* Columnising the grid of images */
+    /* Change number in repeat to alternate the amount of columns
+    grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+} 
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .75;
 }
