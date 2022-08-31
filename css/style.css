@@ -36,6 +36,10 @@
 }
 
 /* General styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -189,6 +193,18 @@ header {
     position: fixed;
 }
 
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
 
 .hamburger {
     display: block;
@@ -198,7 +214,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -264,7 +280,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../../Images/services-bg2.jpg);
+    background-image: url(../Images/services-bg2.jpg);
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
