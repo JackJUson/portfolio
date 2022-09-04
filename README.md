@@ -1,7 +1,11 @@
-# Projects
+# Portfolio
 
-This repo includes all of my upcoming projects!!!
-Stay tuned!!!
+Main Portfolio Repo!
 
-#Plan 29/08/22
-1. Website per day, literally any website. The key is to build the skill.
+Hello I am Jackson Jung. 
+Student of UNSW Software Engineering!
+And this is my current portfolio that I made from sratch with html, css and javascript!
+
+Adjustments incoming~~
+Development phase~~
+https://jackjuson.github.io/Portfolio/
