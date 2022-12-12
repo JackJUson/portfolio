@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6, span {
     line-height: 1.25;
 }
 
+h1 {
+    font-size: 42px;
+}
+
 p {
     font-size: 16px;
     line-height: 1.5;
@@ -20,6 +24,28 @@ p {
 
 li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-one {
+    flex: 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text--purple {
+    color: #6030b1;
 }
 
 /* NAVIGATION BAR */
@@ -36,7 +62,6 @@ nav {
 .nav__link--list {
     display: flex;
 }
-
 
 .nav__link--anchor {
     margin: 0 12px;
@@ -62,4 +87,73 @@ nav {
     color: #6030b1;
     margin: 0 12px;
     font-weight: bold;
+}
+
+/* ABOUT ME */
+
+#about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 18px 16px rgba(0,0,0,0.18);
+    margin-bottom: 24px;
+}
+
+.about-me__picture {
+    width: 115%;
+
+    /* Improving the picture */
+    transform: scale(1.1);
+}
+
+.about-me__info--title {
+    margin-bottom: 24px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.about-me__links {
+    text-align: center;
+}
+
+.about-me__link {
+    font-size: 28px;
+    color: #242424;
+    padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img {
+    width: 100%;
 }
