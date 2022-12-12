@@ -35,6 +35,10 @@ a {
     position: relative;
 }
 
+i:hover {
+    opacity: 0.7;
+}
+
 .link__hover-effect:after {
     content: ""; /* Pseudo element */
     position: absolute; /* Does not affect anything on the page */
@@ -70,6 +74,7 @@ a {
 
 .row {
     width: 100%;
+    padding: 0 16px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -96,6 +101,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .nav__link--list {
@@ -159,6 +165,19 @@ nav {
     justify-content: center;
     box-shadow: 0 18px 16px rgba(0,0,0,0.18);
     margin-bottom: 24px;
+    animation: animate-profile-picture 300ms 200ms backwards;
+}
+
+@keyframes animate-profile-picture {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .about-me__picture {
@@ -170,21 +189,35 @@ nav {
 
 .about-me__info--title {
     margin-bottom: 24px;
+    animation: fade-up 300ms 200ms backwards;
 }
 
 .about-me__info--para {
     font-size: 20px;
     margin-bottom: 24px;
+    animation: fade-up 300ms 350ms backwards;
 }
 
 .about-me__links {
     text-align: center;
+    animation: fade-up 300ms 500ms backwards;
 }
 
 .about-me__link {
     font-size: 28px;
     color: #242424;
     padding: 0 16px;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-me__img--container {
@@ -195,6 +228,33 @@ nav {
 
 .about-me__img {
     width: 100%;
+    animation: fade-in 400ms 650ms backwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.wave {
+    display: inline-block;
+    animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 
 /* BODY SECTION */
@@ -228,6 +288,7 @@ nav {
 
 .language__list {
     display: flex;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap; /* Divides the flexbox into two rows */
 }
@@ -390,4 +451,65 @@ footer {
 .footer__anchor:hover .footer__emoji-popper--one {
     transform: translateX(-80px);
     opacity: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        height: 68px;
+        padding-bottom: 16px;
+    }
+    h1:not(.footer__emoji) {
+        font-size: 28px;
+    }
+    .about-me__info--para {
+        font-size: 18px;
+    }
+    .language {
+        width: calc(100% / 3);
+    }
+    .project__description--para {
+        max-width: 400px;
+        font-size: 14px;
+    }
+
+    .project__description {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav__link:not(:last-child) {
+        display: none;
+    }
+    .project__description {
+        padding-right: 70px;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        padding-right: 90px
+    }
+    .project__description--links {
+        display: flex;
+        justify-content: center;
+    }
+    .project__description--title {
+        font-size: 28px;
+    }
+    .project__description--sub-title {
+        font-size: 16px;
+    }
+    .project__description--title,
+    .project__description--sub-title {
+        text-align: center;
+    }
+    .project__description--sub-title {
+        padding: 10px 0;
+    }
 }
