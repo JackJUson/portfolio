@@ -259,7 +259,6 @@ nav {
     opacity: 0.7;
 }
 
-
 .project:hover .project__img {
     transform: scale(1.05);
     filter: blur(3px);
@@ -303,4 +302,32 @@ nav {
 .project__description--link {
     text-align: left;
     color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #242424;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0;
+    font-size: 18px;
+}
+
+.footer__row,
+.footer__social--link {
+    color: #f8f8f8;
+}
+
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 0 36px 0;
 }
