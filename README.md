@@ -8,4 +8,4 @@ And this is my current portfolio that I made from sratch with html, css and java
 
 Adjustments incoming~~
 Development phase~~
-https://jackjuson.github.io/Portfolio/
+https://jackjuson.github.io/portfolio/
