@@ -47,6 +47,10 @@ p {
     color: #f06449 !important;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* LANDING PAGE */
 #landing-page {
     /* Prevents overflow view of next section for users */
@@ -87,6 +91,19 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    color: white;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
 }
 
 /* NAVIGATION */
