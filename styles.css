@@ -1,7 +1,28 @@
+/* DEFAULT STYLE */
 * {
-    font-family: Outfit, sans-serif;
-    box-sizing: border-box;
-    letter-spacing: 0.5px;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Outfit, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* NAVIGATION */
+
+.personal__logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav__link--list {
+    display: flex;
 }
