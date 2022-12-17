@@ -15,6 +15,80 @@ a {
     text-decoration: none;
 }
 
+section {
+    background-color: rgb(245, 245, 245);
+}
+
+.title {
+    font-size: 76px;
+    margin-bottom: 24px;
+    text-align: left;
+    line-height: 1;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.click {
+    transition: all 300ms ease;
+}
+
+.click:hover {
+    transform: scale(1.2);
+}
+
+.click:active {
+    transform: scale(0.8);
+}
+
+.orange {
+    color: #f06449 !important;
+}
+
+/* LANDING PAGE */
+#landing-page {
+    /* Prevents overflow view of next section for users */
+    min-height: 100vh;
+}
+
+.header {
+    /* Position header always to center of view */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Responsive styling on width position */
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+}
+
+.header__para {
+    font-size: 24px;
+    line-height: 2;
+    max-width: 650px;
+}
+
+.social__list {
+    margin-top: 16px;
+    display: flex;
+}
+
+.social__link {
+    color: #f06449;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* NAVIGATION */
 
 nav {
@@ -25,6 +99,7 @@ nav {
     max-width: 1200px;
     height: 100px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .nav__logo,
