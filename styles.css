@@ -21,6 +21,7 @@ section {
 
 .container {
     padding: 50px 0;
+    width: 100%;
 }
 
 .row {
@@ -40,6 +41,10 @@ section {
 p {
     line-height: 1.5;
     font-size: 16px;
+}
+
+img {
+    width: 100%;
 }
 
 .click {
@@ -271,4 +276,37 @@ nav {
 
 .project__description--para {
     margin: 16px 0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #242424;
+    display: flex;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 0;
+    font-size: 24px;
+}
+
+.footer__logo {
+    font-size: 42px;
+}
+
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5vw 0;
+    margin: 28px 0 36px 0;
+}
+
+.footer__copyright,
+.footer__social--link {
+    color: #f8f8f8;
 }
