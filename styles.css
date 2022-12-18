@@ -67,6 +67,35 @@ button {
     cursor: pointer;
 }
 
+/* ANIMATION */
+
+.link__hover--effect {
+    position: relative;
+}
+
+.link__hover--effect:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    height: 3px;
+    width: 0%;
+    transition: all 300ms ease;
+}
+
+.link__hover--effect:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.link__hover--effect-black:after {
+    background-color: #242424;
+}
+
+.link__hover--effect-white:after {
+    background-color: #f8f8f8;
+}
+
 /* LANDING PAGE */
 #landing-page {
     /* Prevents overflow view of next section for users */
