@@ -19,6 +19,17 @@ section {
     background-color: rgb(245, 245, 245);
 }
 
+.container {
+    padding: 50px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
 .title {
     font-size: 76px;
     margin-bottom: 24px;
@@ -181,4 +192,83 @@ nav {
 
 .fa-adjust {
     font-size: 20px;
+}
+
+/* PROJECTS */
+
+.project {
+    margin-bottom: 112px;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.project__img {
+    width: 100%;
+    transition: all 450ms ease;
+}
+
+.project__wrapper {
+    position: relative;
+    border-radius: 32px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+    overflow: hidden;
+}
+
+.project__wrapper:hover .project__description {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.project__wrapper:hover .project__img {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
+.project__wrapper:hover .project__wrapper--background {
+    opacity: 0.7;
+}
+
+.project__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 300ms, transform 450ms ease;
+    color: white;
+    max-width: 550px;
+}
+
+.project__wrapper--background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1d25;
+    opacity: 0;
+    transition: all 450ms ease;
+}
+
+.project__description--title {
+    font-size: 48px;
+}
+
+.project__description--sub-title {
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.project__description--link {
+    color: white;
+    font-size: 32px;
+    margin-right: 8px;
+}
+
+.project__description--para {
+    margin: 16px 0;
 }
