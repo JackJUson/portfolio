@@ -225,9 +225,11 @@ nav,
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute;
-    bottom: 32px;
-    right: 40px;
+    position: fixed;
+    bottom: 48px;
+    right: 48px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
 }
 
 .scroll {
