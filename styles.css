@@ -17,6 +17,7 @@ a {
 
 section {
     background-color: rgb(245, 245, 245);
+    transition: all 300ms ease;
 }
 
 label {
@@ -142,6 +143,32 @@ nav,
     opacity: 0;
     visibility: hidden;
     transition: all 300ms;
+}
+
+.dark-theme .nav__logo,
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para {
+    color: #f8f8f8;
+}
+
+.dark-theme section {
+    background-color: #242424;
+}
+
+.dark-theme .scroll__icon {
+    border-color: #f8f8f8;
+}
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover--effect-black:after {
+    background-color: #f8f8f8;
+}
+.dark-theme .mail__btn {
+    background-color: #f8f8f8;
+    color: #242424;
 }
 
 /* LANDING PAGE */
