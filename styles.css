@@ -280,6 +280,8 @@ nav {
     overflow: hidden;
     display: flex;
     visibility: hidden;
+    z-index: -1;
+    transition: visibility 0.1s, z-index 0.1s, box-shadow 0.1s ease;
 }
 
 .modal__half {
@@ -289,10 +291,16 @@ nav {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    transition: all 300ms ease;
 }
 
+.modal--open .modal__about,
+.modal--open .modal__contact {
+    transform: translateX(0%);
+}
 .modal__about {
     background-color: rgb(245, 245, 245);
+    transform: translateX(-110%);
 }
 
 .modal__languages {
@@ -330,6 +338,7 @@ nav {
 .modal__contact {
     background-color: #242424;
     color: #f8f8f8;
+    transform: translateX(110%);
 }
 
 .modal__title {
@@ -379,7 +388,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: -1;
@@ -400,6 +409,7 @@ nav {
 
 .modal__overlay--visible {
     z-index: 1;
+    display: flex;
 }
 
 .fa-spinner {
