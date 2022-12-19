@@ -128,6 +128,22 @@ button {
     background-color: #f8f8f8;
 }
 
+nav,
+.scroll,
+.header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms 200ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms;
+}
+
 /* LANDING PAGE */
 #landing-page {
     /* Prevents overflow view of next section for users */
