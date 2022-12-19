@@ -7,6 +7,10 @@
     letter-spacing: 0.5px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li {
     list-style-type: none;
 }
@@ -561,6 +565,7 @@ nav {
 footer {
     background-color: #242424;
     display: flex;
+    position: relative;
 }
 
 .footer__row {
@@ -632,4 +637,87 @@ footer {
 .shape--8 {
     top: 80vh;
     left: 80vw;
+}
+
+/* RESPONSIVE */
+
+/* TABLETS, LARGE SMART PHONES */
+@media (max-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+    .nav__logo {
+        font-size: 24px;
+    }
+    .header__para {
+        max-width: 450px;
+        font-size: 16px;
+    }
+    .modal {
+        top: 0;
+        left: 0;
+        height: auto;
+        transform: none;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .modal__half {
+        width: 100%;
+    }
+    .nav__link:first-child {
+        display: none;
+    }
+    .project__description--title {
+        font-size: 40px;
+    }
+    .project__description--para {
+        max-width: 400px;
+    }
+    .project__description--sub-title {
+        font-size: 16px;
+    }
+    .project__description--link {
+        font-size: 24px;
+    }
+}
+
+/* MEDIUM PHONES */
+@media (max-width: 600px) {
+    .project__description--title {
+        font-size: 32px;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    .project__description--link {
+        font-size: 24px;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .modal__half {
+        padding: 40px;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+    .title {
+        font-size: 40px;
+    }
+    .header__para {
+        font-size: 14px;
+        max-width: 300px;
+    }
+    .nav__link:not(:last-child) {
+        display: none;
+    }
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
