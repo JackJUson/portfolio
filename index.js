@@ -38,6 +38,9 @@ function contact(event) {
     ).then(() => {
         loading.classList.remove("modal__overlay--visible");
         success.classList += " modal__overlay--visible";
+        setTimeout(() => {
+            success.classList.remove("modal__overlay--visible");
+        }, 3000);
     }).catch(() => {
         loading.classList.remove("modal__overlay--visible");
         alert(
