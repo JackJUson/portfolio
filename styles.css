@@ -163,6 +163,10 @@ nav,
     background-color: #242424;
 }
 
+.dark-theme #projects {
+    background-color: #1f1f1f;
+}
+
 .dark-theme .scroll__icon {
     border-color: #f8f8f8;
 }

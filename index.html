@@ -70,7 +70,7 @@
           <h1 class="title">Hello! 👋</h1>
           <h1 class="title orange">I'm Jackson.</h1>
           <p class="header__para">
-            I'm a <b class="orange">Software Engineering Student</b> with a strong
+            I'm a <b class="orange">Computer Science Student</b> with a strong
             passion for building web applications with great user experiences.
             <br />
             Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
@@ -99,9 +99,11 @@
         </div>
       </header>
 
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fas fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
 
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
@@ -112,7 +114,7 @@
           <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
           <h4 class="modal__sub-title modal__sub-title--about">Software Engineer</h4>
           <p class="modal__para">
-            I'm a <b class="orange">software engineering</b> student at UNSW with a 
+            I'm a <b class="orange">Computer Science</b> student at UNSW with a 
             strong passion for developing and learning <b class="orange">web applications.</b>
             <br>
             1. Sell myself 2. Impress the recruiter 3. <b class="orange">Elaborate</b> how I 
@@ -311,12 +313,12 @@
               >Linkedin</a
             >
             <a
-              href="#"
+              href="#" onclick="toggleModal()"
               class="footer__social--link link__hover--effect link__hover--effect-white"
               >Email</a
             >
             <a
-              href="#"
+              href="./assets/cv.pdf" target="_blank"
               class="footer__social--link link__hover--effect link__hover--effect-white"
               >Resume</a
             >
